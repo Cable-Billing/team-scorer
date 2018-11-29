@@ -16,4 +16,8 @@ app.on('ready', function() {
         protocol: 'file:',
         slashes: true
     }));
+    // Quit app when main window is closed
+    mainWindow.on('closed', function() {
+        app.quit();
+    });
 });

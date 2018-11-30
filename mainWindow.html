@@ -3,6 +3,7 @@
     <head>
         <title>Team Scorer</title>
         <link rel="stylesheet" type="text/css" href="stylesheets/mainWindow.css">
+        <script type="text/javascript" src="scripts/mainWindow.js"></script>
     </head>
     <body>
         <div class="titleBar">
@@ -10,10 +11,9 @@
         </div>
         <div class="inputBody">
             <div class="team1">
-                <h3>TEAM 1</h3>
-                <label>Name</label>
-                <input type="text" id="team1" autofocus>
-                <label>Colour</label>
+                <h3 class="teamInputs1">TEAM 1</h3>
+                <input type="text" id="team1" placeholder="TEAM NAME" autofocus><br><br>
+                <h3 class="teamInputs2">TEAM COLOUR</h3>
                 <select>
                     <option value="red">RED</option>
                     <option value="green">GREEN</option>
@@ -27,10 +27,9 @@
                 </select>
             </div>
             <div class="team2">
-                <h3>TEAM 2</h3>
-                <label>Name</label>
-                <input type="text" id="team2">
-                <label>Colour</label>
+                <h3 class="teamInputs1">TEAM 2</h3>
+                <input type="text" id="team2" placeholder="TEAM NAME"><br><br>
+                <h3 class="teamInputs2">TEAM COLOUR</h3>
                 <select>
                     <option value="red">RED</option>
                     <option value="green">GREEN</option>
@@ -44,10 +43,9 @@
                 </select>
             </div>
             <div class="team3">
-                <h3>TEAM 3</h3>
-                <label>Name</label>
-                <input type="text" id="team3">
-                <label>Colour</label>
+                <h3 class="teamInputs1">TEAM 3</h3>
+                <input type="text" id="team3" placeholder="TEAM NAME"><br><br>
+                <h3 class="teamInputs2">TEAM COLOUR</h3>
                 <select>
                     <option value="red">RED</option>
                     <option value="green">GREEN</option>
@@ -61,10 +59,9 @@
                 </select>
             </div>
             <div class="team4">
-                <h3>TEAM 4</h3>
-                <label>Name</label>
-                <input type="text" id="team4">
-                <label>Colour</label>
+                <h3 class="teamInputs1">TEAM 4</h3>
+                <input type="text" id="team4" placeholder="TEAM NAME"><br><br>
+                <h3 class="teamInputs2">TEAM COLOUR</h3>
                 <select>
                     <option value="red">RED</option>
                     <option value="green">GREEN</option>
@@ -77,6 +74,9 @@
                     <option value="dogerblue">DODGERBLUE</option>
                 </select>
             </div>
+        </div>
+        <div class="footer">
+            <button class="submit">SUBMIT</button>
         </div>
     </body>
 </html>

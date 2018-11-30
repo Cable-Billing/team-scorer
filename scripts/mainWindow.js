@@ -1,0 +1,3 @@
+const loadNewPage = function() {
+    
+}

@@ -5,9 +5,7 @@ Before running, make sure Electron is installed and to install all required pack
 npm install electron --save-dev
 npm install
 ```
-Use `npm start` or `electron .` to run the app. It opens in borderless window mode so to Quit use the shortcut `Ctrl+Q` or `Cammand+Q` 
-respectivly. To toggle fullscreen use `Ctrl+F` or `Cammand+F` respectivly.
-If you want to compile for Linux, Mac OS or Windows you need to install Electron Packager
+Use `npm start` or `electron .` to run the app. It opens in borderless window mode so to close the app use the shortcut `Ctrl+Q` or `Cammand+Q` respectivly. To toggle fullscreen use `Ctrl+F` or `Cammand+F` respectivly. If you want to compile for Linux, Mac OS or Windows you need to install Electron Packager
 ```
 npm install electron-packager --save-dev
 ```

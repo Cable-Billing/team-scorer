@@ -1,6 +1,6 @@
 # team-scorer
 
-Before running, make sure Electron is installed.
+Before running, make sure Electron is installed
 ```
 npm install electron --save-dev
 ```

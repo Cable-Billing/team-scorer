@@ -1,8 +1,9 @@
 # team-scorer
 
-Before running, make sure Electron is installed
+Before running, make sure Electron is installed and to install all require packages
 ```
 npm install electron --save-dev
+npm install
 ```
 Use `npm start` or `electron .` to run the app.
 If you want to compile for Linux, Mac OS or Windows you need to install Electron Packager

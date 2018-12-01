@@ -8,8 +8,8 @@ let mainWindow;
 
 // Listen for the app to be ready
 app.on('ready', function() {
-    mainWindow = new BrowserWindow({ frame: false }); // Create new window
-    mainWindow.setMenu(null); // Disable menu bar
+    mainWindow = new BrowserWindow({ /*frame: false*/ }); // Create new window
+    //mainWindow.setMenu(null); // Disable menu bar
     // Load html into window
     mainWindow.loadURL(url.format({
         pathname: path.join(__dirname, 'mainWindow.html'),
@@ -29,15 +29,21 @@ app.on('ready', function() {
 
 // Create menu template
 const mainMenuTemplate = [{
-        label: 'File',
-        submenu: [{
-            label: 'Quit',
-            accelerator: process.platform == 'darwin' ? 'Command+Q' : 'Ctrl+Q',
-            click() {
-                app.quit();
-            }
-        }]
+    label: 'File',
+    submenu: [{
+        label: 'Reload',
+        accelerator: process.platform == 'darwin' ? 'Command+R' : 'Ctrl+R',
+        click() {
+            mainWindow.reload();
+        }
     }, {
+        label: 'Quit',
+        accelerator: process.platform == 'darwin' ? 'Command+Q' : 'Ctrl+Q',
+        click() {
+            app.quit();
+        }
+    }]
+}, {
     label: 'View',
     submenu: [{
         label: 'Fullscreen',
@@ -45,8 +51,10 @@ const mainMenuTemplate = [{
         click() {
             if (mainWindow.isFullScreen()) {
                 mainWindow.setFullScreen(false);
+                mainWindow.setMenuBarVisibility(true);
             } else {
                 mainWindow.setFullScreen(true);
+                mainWindow.setMenuBarVisibility(false);
             }
         }
     }]

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Team Scorer</title>
         <link rel="stylesheet" type="text/css" href="stylesheets/mainWindow.css">
         <script type="text/javascript" src="scripts/mainWindow.js"></script>
+        <script type="text/javascript" src="main.js"></script>
     </head>
     <body>
         <div class="titleBar">
             <h1 class="title">TEAM SCORER</h1>
         </div>
         <div class="inputBody">
-            <div class="team1">
+            <div class="teamOne">
                 <h3 class="teamInputs1">TEAM 1</h3>
-                <input type="text" id="team1" placeholder="TEAM NAME" autofocus><br><br>
+                <input type="text" id="teamOneName" placeholder="TEAM NAME" autofocus><br><br>
                 <h3 class="teamInputs2">TEAM COLOUR</h3>
-                <select>
+                <select id="teamOneColour">
                     <option value="red">RED</option>
                     <option value="green">GREEN</option>
                     <option value="blue">BLUE</option>
@@ -26,11 +26,11 @@
                     <option value="dogerblue">DODGERBLUE</option>
                 </select>
             </div>
-            <div class="team2">
+            <div class="teamTwo">
                 <h3 class="teamInputs1">TEAM 2</h3>
-                <input type="text" id="team2" placeholder="TEAM NAME"><br><br>
+                <input type="text" id="teamTwoName" placeholder="TEAM NAME"><br><br>
                 <h3 class="teamInputs2">TEAM COLOUR</h3>
-                <select>
+                <select id="teamTwoColour">
                     <option value="red">RED</option>
                     <option value="green">GREEN</option>
                     <option value="blue">BLUE</option>
@@ -42,11 +42,11 @@
                     <option value="dogerblue">DODGERBLUE</option>
                 </select>
             </div>
-            <div class="team3">
+            <div class="teamThree">
                 <h3 class="teamInputs1">TEAM 3</h3>
-                <input type="text" id="team3" placeholder="TEAM NAME"><br><br>
+                <input type="text" id="teamThreeName" placeholder="TEAM NAME"><br><br>
                 <h3 class="teamInputs2">TEAM COLOUR</h3>
-                <select>
+                <select id="teamThreeColour">
                     <option value="red">RED</option>
                     <option value="green">GREEN</option>
                     <option value="blue">BLUE</option>
@@ -58,11 +58,11 @@
                     <option value="dogerblue">DODGERBLUE</option>
                 </select>
             </div>
-            <div class="team4">
+            <div class="teamFour">
                 <h3 class="teamInputs1">TEAM 4</h3>
-                <input type="text" id="team4" placeholder="TEAM NAME"><br><br>
+                <input type="text" id="teamFourName" placeholder="TEAM NAME"><br><br>
                 <h3 class="teamInputs2">TEAM COLOUR</h3>
-                <select>
+                <select id="teamFourColour">
                     <option value="red">RED</option>
                     <option value="green">GREEN</option>
                     <option value="blue">BLUE</option>
@@ -76,7 +76,7 @@
             </div>
         </div>
         <div class="footer">
-            <button class="submit">SUBMIT</button>
+            <button class="submit" onclick="submitTeamData()">SUBMIT</button>
         </div>
     </body>
 </html>

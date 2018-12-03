@@ -1,0 +1,31 @@
+#teamOne {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 50vh;
+}
+
+#teamTwo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 50vh;
+}
+
+#teamThree {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50vw;
+    height: 50vh;
+}
+
+#teamFour {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    height: 50vh;
+}

@@ -5,6 +5,7 @@ body {
     font-family: monospace;
     background: #1C2833;
     color: white;
+    transition-duration: 0.5s;
 }
 
 .titleBar {
@@ -90,6 +91,7 @@ body {
     outline: none;
     transition-duration: 0.5s;
     border-radius: 4px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .submit:hover {
@@ -109,6 +111,7 @@ input {
     font-family: monospace;
     font-weight: bold;
     transition-duration: 0.5s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 input:hover {
@@ -133,6 +136,7 @@ select {
     font-weight: bold;
     transition-duration: 0.5s;
     border-radius: 4px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 select:hover {

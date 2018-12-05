@@ -4,19 +4,19 @@ const { ipcRenderer } = electron;
 ipcRenderer.on('team:submit', function(e, teamData) {
     // Team 1
     document.getElementById('teamOneName').innerHTML = teamData.teamOneName;
-    //document.getElementById('teamOne').style.background = teamData.teamOneColour;
+    document.getElementById('teamOneScore').style.background = teamData.teamOneColour;
     document.getElementById('teamOneName').style.color = teamData.teamOneColour;
     // Team 2
     document.getElementById('teamTwoName').innerHTML = teamData.teamTwoName;
-    //document.getElementById('teamTwo').style.background = teamData.teamTwoColour;
+    document.getElementById('teamTwoScore').style.background = teamData.teamTwoColour;
     document.getElementById('teamTwoName').style.color = teamData.teamTwoColour;
     // Team 3
     document.getElementById('teamThreeName').innerHTML = teamData.teamThreeName;
-    //document.getElementById('teamThree').style.background = teamData.teamThreeColour;
+    document.getElementById('teamThreeScore').style.background = teamData.teamThreeColour;
     document.getElementById('teamThreeName').style.color = teamData.teamThreeColour;
     // Team 4
     document.getElementById('teamFourName').innerHTML = teamData.teamFourName;
-    //document.getElementById('teamFour').style.background = teamData.teamFourColour;
+    document.getElementById('teamFourScore').style.background = teamData.teamFourColour;
     document.getElementById('teamFourName').style.color = teamData.teamFourColour;
 });
 

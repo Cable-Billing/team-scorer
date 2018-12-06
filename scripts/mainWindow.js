@@ -15,20 +15,22 @@ function submitTeamData() {
     var teamFourName = document.getElementById('teamFourName').value;
     var teamFourColour = document.getElementById('teamFourColour').value;
 
-    const teamData = {
-        // Team 1
-        teamOneName: teamOneName,
-        teamOneColour: teamOneColour,
-        // Team 2
-        teamTwoName: teamTwoName,
-        teamTwoColour: teamTwoColour,
-        // Team 3
-        teamThreeName: teamThreeName,
-        teamThreeColour: teamThreeColour,
-        // Team 4
-        teamFourName: teamFourName,
-        teamFourColour: teamFourColour
-    };
-
-    ipcRenderer.send('team-submit', teamData);
+    // Must supply a name
+    if (teamOneName && teamTwoName && teamThreeName && teamFourName) {
+        const teamData = {
+            // Team 1
+            teamOneName: teamOneName,
+            teamOneColour: teamOneColour,
+            // Team 2
+            teamTwoName: teamTwoName,
+            teamTwoColour: teamTwoColour,
+            // Team 3
+            teamThreeName: teamThreeName,
+            teamThreeColour: teamThreeColour,
+            // Team 4
+            teamFourName: teamFourName,
+            teamFourColour: teamFourColour
+        };
+        ipcRenderer.send('team-submit', teamData);
+    }
 }

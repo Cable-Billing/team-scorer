@@ -1,7 +1,7 @@
 const electron = require('electron');
 const { ipcRenderer } = electron;
 
-ipcRenderer.on('team:submit', function(e, teamData) {
+ipcRenderer.on('team-submit', function(e, teamData) {
     // Team 1
     document.getElementById('teamOneName').innerHTML = teamData.teamOneName;
     document.getElementById('teamOneScore').style.background = teamData.teamOneColour;

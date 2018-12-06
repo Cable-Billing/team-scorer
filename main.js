@@ -37,9 +37,9 @@ function teamScoreWindow() {
 }
 
 // Catch team data
-ipcMain.on('team:submit', function(e, teamData) {
+ipcMain.on('team-submit', function(e, teamData) {
     //console.log(teamData);
-    teamWindow.webContents.send('team:submit', teamData)
+    teamWindow.webContents.send('team-submit', teamData)
     teamWindow.focus();
     teamWindow.setFullScreen(true);
     teamWindow.setMenuBarVisibility(false);

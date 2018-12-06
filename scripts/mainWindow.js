@@ -30,5 +30,5 @@ function submitTeamData() {
         teamFourColour: teamFourColour
     };
 
-    ipcRenderer.send('team:submit', teamData);
+    ipcRenderer.send('team-submit', teamData);
 }

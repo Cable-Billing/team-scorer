@@ -56,15 +56,18 @@ body {
 .teamName {
     font-size: 8vh;
     margin: 0;
-    margin-top: 2vh;
+    margin-top: 1.8vh;
 }
 
 .score {
+    position: absolute;
     font-size: 12vh;
     margin: 0;
     margin-top: 5vh;
     border-top: solid 2px white;
-    border-bottom: solid 2px white
+    border-bottom: solid 2px white;
+    bottom: 15vh;
+    width: 100%;
 }
 
 .addScore {
